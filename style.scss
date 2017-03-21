@@ -151,7 +151,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: $margin_header;
 }
 
 .masthead {
@@ -272,7 +272,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: $margin_footer;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
