@@ -21,6 +21,10 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+// Margins
+$margin_header: 20px;
+$margin_footer: 20px;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
