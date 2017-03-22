@@ -242,10 +242,11 @@ nav {
 //
 
 .post {
-  border: 2px dashed;
-  border-radius: .5em;
+  border: 1px solid;
+  border-radius: 6px;
   border-color: $post_bordercolor;
-  background-color: $post_background;
+  background-color: $white;
+  color: $post_color;
   padding: 10px;
 	
   h1 {
