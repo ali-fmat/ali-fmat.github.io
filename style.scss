@@ -18,9 +18,11 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  position: relative;
+  padding-bottom: 6rem;
 }
 
 .container {
