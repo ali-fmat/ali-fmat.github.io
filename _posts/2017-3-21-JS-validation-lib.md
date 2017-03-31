@@ -115,7 +115,7 @@ function existPropertyInObject(property, obj){
 ```
 
 ##### Tests done for this method(existPropertyInObject):
-###### var obj = { test: { test: { test: { test: { test: undefined } } } } };
+###### var obj = { test: { test: { test: { test: { test: undefined, tests: '' } } } } };
 
 console.log('(null,null) should be false', existPropertyInObject(null, null));
 console.log('() should be false', existPropertyInObject());
@@ -129,14 +129,13 @@ console.log('(1,{}) should be false', existPropertyInObject(1, {}));
 console.log('("",{}) should be false', existPropertyInObject('', {}));
 console.log('("test",{}) should be false', existPropertyInObject('test', {}));
 console.log('("",obj) should be false', existPropertyInObject('', obj));
-console.log('("test",obj) should be true', exist('test', obj));
-console.log('("test.test",obj) should be true', exist('test.test', obj));
-console.log('("test.test.test",obj) should be true', exist('test.test.test', obj));
-console.log('("test.test.test.test",obj) should be true', exist('test.test.test.test', obj));
-console.log('("test.test.test.test.test",obj) should be false', exist('test.test.test.test.test', obj));
-console.log('("test.test.test.test.tests",obj) should be true', exist('test.test.test.test.tests', obj));
-console.log('("test.test.test.test.tests",obj) should be true', exist('test.test.test.test.tests', obj));
-console.log('("test.test.test.tests.tests",obj) should be false', exist('test.test.test.tests.tests', obj));
-console.log('("test.test.tests.test.tests",obj) should be false', exist('test.test.tests.test.tests', obj));
-console.log('("test.tests.test.test.tests",obj) should be false', exist('test.tests.test.test.tests', obj));
-console.log('("tests.test.test.test.tests",obj) should be false', exist('tests.test.test.test.tests', obj));
+console.log('("test",obj) should be true', existPropertyInObject('test', obj));
+console.log('("test.test",obj) should be true', existPropertyInObject('test.test', obj));
+console.log('("test.test.test",obj) should be true', existPropertyInObject('test.test.test', obj));
+console.log('("test.test.test.test",obj) should be true', existPropertyInObject('test.test.test.test', obj));
+console.log('("test.test.test.test.test",obj) should be false', existPropertyInObject('test.test.test.test.test', obj));
+console.log('("test.test.test.test.tests",obj) should be true', existPropertyInObject('test.test.test.test.tests', obj));
+console.log('("test.test.test.tests.tests",obj) should be false', existPropertyInObject('test.test.test.tests.tests', obj));
+console.log('("test.test.tests.test.tests",obj) should be false', existPropertyInObject('test.test.tests.test.tests', obj));
+console.log('("test.tests.test.test.tests",obj) should be false', existPropertyInObject('test.tests.test.test.tests', obj));
+console.log('("tests.test.test.test.tests",obj) should be false', existPropertyInObject('tests.test.test.test.tests', obj));
