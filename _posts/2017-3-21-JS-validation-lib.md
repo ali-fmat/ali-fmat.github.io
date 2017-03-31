@@ -4,6 +4,14 @@ title: Javascript(ES5) validation library
 ---
 Estas son algunas funciones, que podrían ser de utilidad para aquellos que desarrollan con Javascript y requieren de hacer validaciones en determinados lugares de sus proyectos.
 
+#### isInteger
+```javascript
+function isInteger(value) {
+  // fuente: https://www.toptal.com/javascript/interview-questions
+  return value === (value^0);
+}
+```
+
 #### isDefined
 ```javascript
 function isDefined(value){
